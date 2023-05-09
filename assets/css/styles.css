@@ -24,12 +24,20 @@ ul {
     list-style-type: none;
     width: 500px;
     justify-content: space-around;
-    padding: auto, 50px;
+    padding: 20px;
+    margin: 10px;
 }
 
 li {
     font-size: 36px;
     text-decoration: wavy;
+}
+
+#banner {
+    background-image: url(https://images.pexels.com/photos/1098515/pexels-photo-1098515.jpeg);
+    width: 100%;
+    height: 50%;
+    background-position: center;
 }
 
 .company-text h1 {
@@ -50,7 +58,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 50%;
     width: 100%;
     
 }
