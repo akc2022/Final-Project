@@ -24,6 +24,7 @@ ul {
     list-style-type: none;
     width: 500px;
     justify-content: space-around;
+    padding: auto, 50px;
 }
 
 li {
@@ -32,9 +33,10 @@ li {
 }
 
 .company-text h1 {
-    font-size: 90px;
+    font-size: 85px;
     margin: 0px auto;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .company-text h2 {
@@ -57,20 +59,7 @@ li {
     font-size: 90px;
     margin-left: 100px;
     padding-bottom: 200px;
-    border: solid black 2px;
-}
-
-.button {
-    width: 200px;
-    height: 60px;
-    border-radius: 40px;
-    background-color: hsl(128, 35%, 44%);
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    margin: 15px auto 10px 50px;
-    padding-top: 10px;
+    padding-bottom: 200px;
 }
 
 .socials {
