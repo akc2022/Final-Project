@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Travel Bucket List</title>
+    </head>
+    <body>
+        <section class="landing-page">
+            <nav>
+                <img class="logo" src="assets/images/logoforgp.png" alt="logo"/>
+                <ul>
+                    <li>Home</li>
+                    <li>Bucket List</li>
+                    <li>Blog</li>
+                </ul>
+            </nav>
+            <div id="banner">
+                <!-- <img src="assets/images/world-slide3.jpg"/> -->
+            </div>
+            <div class="company">
 
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Travel Bucket List</title>
-</head>
-<body>
-    <section class="landing-page">
-        <nav>
-            <img class="logo" src="assets/images/logoforgp.png" alt="logo"/>
-            <ul>
-                <li>Home</li>
-                <li>Bucket List</li>
-                <li>Blog</li>
-            </ul>
-        </nav>
-        <div class="company">
-        <div class="company-text">
-            <h1>The Third Group Travel Co.</h1>
-            <h2>Making your Travel Bucket List digital!</h2>
-            <div class="button">Bucket List</div>            
-        </div>
-        <div class="socials">
+                <div class="company-text">
+                    <h1>The Third Group Travel Co.</h1>
+                    <h2>Making your Travel Bucket List Digital!</h2>
+                </div>         
             </div>
-            <div class="social">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>    
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.instagram.com/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
-                </a>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <div class="row m-3">
-        <!-- Title -->
-        <div class="col text-center">
-            <div class="">
-                <h1 class="">JWD Travel Bucket List</h1>
-            </div>
-        </div>
-    </div>
-    <div class="row mx-5">
-        <div class="col-4">
-            <!-- Location -->
-            <form>
-                <div class="form-group">
-                    <label for="formGroupExampleInput"><h3>Details</h3></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Destination">
+            <div class="socials">
+                <div class="social">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+                    </a>
                 </div>
-            </form>
-        </div>
-    </div>
-    <div class="row mx-5">
-        <div class="col-4">
-            <!-- Description -->
+                <div class="social">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    <div>
+      <div class="container w-50 border border-dark">
+        <div class="row">
+          <div class="col">
+            <img src="assets/images/world-slide3.jpg" width=100%>
+          </div>
+          <div class="col">
             <form>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Attractions" rows="3"></textarea>
-                  </div>
+              <h1>Add a Destination</h1>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Location">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Traveler(s)">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label for "departureDate">Departing</label>
+                  <input type="date" class="form-control" value=""/>
+                </div>
+                <div class="col">
+                  <label for "returnDate">Returning</label>
+                  <input type="date" class="form-control" value=""/>
+                </div>
+              </div>
+              <div class="row">
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Attractions">
+              </div>
+              <div class="row">
+              <button type="submit" class="btn btn-primary w-25 mx-center">Add</button>
+            </div>
             </form>
         </div>
     </div>
@@ -95,39 +102,13 @@
                
     </div>
   
-    <div class="    ">Card Board
-        <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text"> Destination</p>
-              <button type="button" class="btn btn-primary">Button</button>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">  </p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-              <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-              </div> 
-              
-            </div>
-          </div>
-    </div>
-    
-          
+    <div class="    ">Card Board</div>
 
 
 
 
-    <script src="..."></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+
+        <script src="..."></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
 </html>
