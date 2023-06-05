@@ -44,7 +44,7 @@ li {
     font-size: 85px;
     margin: 0px auto;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 .company-text h2 {
@@ -60,7 +60,7 @@ li {
     align-items: center;
     height: 50%;
     width: 100%;
-    
+
 }
 
 .company-text {
@@ -72,12 +72,19 @@ li {
 
 .socials {
     padding-bottom: 200px;
-    
+
 }
 .social {
     margin-bottom: 10px;
 }
 
+/* #section2 {
+  height: 100vh;
+} */
+
+#section3 {
+  height: 100vh;
+}
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Source Serif Pro', serif; */
