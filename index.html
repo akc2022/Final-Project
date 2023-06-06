@@ -111,7 +111,7 @@
 </div>
 
   <div id="section3" class="d-flex align-items-center jutify-content-center container flex-column pt-5">
-      <div class="row w-75">
+      <div class="row w-75 row-eq-height">
         <div class="col w-100">
           <img src="assets/images/world-slide3.jpg" class="w-100" alt="image of world">
         </div>
@@ -119,27 +119,28 @@
           <form>
             <h1>Add a Destination</h1>
             <div class="row p-2">
-              <div class="col d-flex">
+              <div class="col px-2">
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Location">
               </div>
-              <div class="col">
+              <div class="col px-2">
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Traveler(s)">
               </div>
             </div>
             <div class="row p-2">
-              <div class="col">
+              <div class="col px-2">
                 <label for="departureDate">Departing</label>
                 <input type="date" class="form-control" value="">
               </div>
-              <div class="col">
+              <div class="col px-2">
                 <label for="returnDate">Returning</label>
                 <input type="date" class="form-control" value="">
               </div>
             </div>
             <div class="row p-2">
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Attractions">
+              <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="Attractions" rows="5">
+              </textarea
             </div>
-            <div class="row">
+            <div class="row pt-4 d-flex justify-content-center">
               <button type="submit" class="btn btn-primary w-25 mx-center">Add</button>
             </div>
           </form>
