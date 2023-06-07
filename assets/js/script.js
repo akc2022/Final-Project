@@ -8,3 +8,6 @@ function validateFormFieldInput(data) {
     console.log('beep beep');
   }
 }
+
+
+//need to create new card object and alter innerhtml upon click 
