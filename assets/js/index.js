@@ -8,6 +8,8 @@
 //     console.log('beep beep');
 //   }
 // }
-//need to create new card object and alter innerhtml upon click
 
-const testTask = new TaskManager;
+const taskList = new TaskManager;
+taskList.addTask('Allison', 'super cool description', 'Assigned to Allison', 'due tomorrow');
+taskList.addTask('Bob', 'super cool description', 'Assigned to Bob', 'due tomorrow');
+console.log(taskList.tasks);
