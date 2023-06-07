@@ -5,9 +5,9 @@ class TaskManager {
     this.currentId= currentId;
   }
 
-  addTask(name, description, assignedTo, dueDate, status='Pending') {
+  addTask(location, departure, returnDate, attractions, status='Pending') {
     this.currentId++;
     let id=this.currentId;
-    this.tasks.push({id, name, description, assignedTo, dueDate, status});
+    this.tasks.push({id, location, departure, returnDate, attractions, status});
     }
 }
