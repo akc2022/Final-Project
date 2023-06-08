@@ -1,4 +1,7 @@
-//  VALIDATION STILL NEEDS TO BE COMPLETED
+//  VALIDATION STILL NEEDS TO BE COMPLETED AND ERROR MESSAGES NEED TO BE DISPLAYED
+//to validate travelers, travelers needs to be names not number
+//to validate location, location needs to be string
+//to validate dates, dates need to be number, returning needs to be later than departure
 function validateFormFieldInput(data) {
   const addButton = document.getElementById('add');
   const locationInput = document.getElementById('location');
@@ -14,13 +17,15 @@ function validateFormFieldInput(data) {
   if (location === '') {
     console.log('beep beep');
   }
-taskList.addTask(location, departure, returnDate, attractions);
+//add to tasklist
+taskList.addTask(location, traveler, departure, returnDate, attractions);
+//clear form
+locationInput.value = '';
+travelerInput.value= '';
+departureDateInput.value = '';
+returnDateInput.value = '';
+attractionInput.value = '';
  }
-
-
-
-
-
 
 
 

@@ -115,7 +115,10 @@
         <div class="col w-100">
           <img src="assets/images/world-slide3.jpg" class="w-100" alt="image of world">
         </div>
-        <div class="col d-flex flex-column justify-content-space-around">
+        <div class="col d-flex flex-column justify-content-space-around position-relative">
+          <div class="alert alert-danger position-absolute" role="alert">
+  A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  </div>
           <form>
             <h1>Add a Destination</h1>
             <div class="row p-2">
@@ -137,8 +140,7 @@
               </div>
             </div>
             <div class="row p-2">
-              <textarea type="text" class="form-control" id="attractions" placeholder="Attractions" rows="5">
-              </textarea
+              <textarea type="text" class="form-control" id="attractions" placeholder="Attractions" rows="5"></textarea
             </div>
             <div class="row pt-4 d-flex justify-content-center">
               <button type="button" class="btn btn-primary w-25 mx-center" id="add">Add</button>
