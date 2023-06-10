@@ -18,6 +18,12 @@ function createTaskHtml(location, traveler, departure, returnDate, attractions, 
 return html;
 }
 
+function formatDate(dateInput) {
+  let date = new Date(dateInput);
+  let formattedDate = date.toDateString();
+  formattedDate = formattedDate.substr(formattedDate.indexOf(' ') + 1);
+  return formattedDate;
+}
 
 class TaskManager {
   constructor(currentId=0) {
@@ -35,10 +41,7 @@ class TaskManager {
         for (var i = 0; i < this.tasks.length; i++) {
           let currentTask = this.tasks[i];
           console.log(currentTask);
-          let date = new Date(currentTask['departure']);
-          let formattedDate = date.toDateString();
-          formattedDate=formattedDate.substr(formattedDate.indexOf(' ') + 1);
-          let taskHtml = createTaskHtml(currentTask['location'], currentTask['traveler'], formattedDate, currentTask['returnDate'], currentTask['attractions'], currentTask['status'] );
+          let taskHtml = createTaskHtml(currentTask['location'], currentTask['traveler'], formatDate(currentTask['departure']), formatDate(currentTask['returnDate']), currentTask['attractions'], currentTask['status'] );
           tasksHtmlList.push(taskHtml);
         }
          const tasksHtml = tasksHtmlList.join('\n');
