@@ -1,16 +1,19 @@
 function createTaskHtml(location, traveler, departure, returnDate, attractions, status) {
-   const html = `<li class="list-group-item">
-        <div class="d-flex w-100 mt-2 justify-content-between align-items-center">
-            <h5>${location}</h5>
-            <span class="badge badge-danger">${status}</span>
+   const html = `
+    <div class="col mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">${location}</h5>
+          <p>Traveler(s): ${traveler}</p>
+          <p>Departure Date: ${departure}</p>
+          <p>Return Date:  ${returnDate}</p>
+          <p class="card-text">Attractions: ${attractions}</p>
+          <span>Status: </span><span class="text-success">${status}</span>
+        </br>
+          <a href="#" class="btn btn-primary mt-3">Delete</a>
         </div>
-        <div class="d-flex w-100 mb-3 justify-content-between">
-            <small>Assigned To: ${traveler}</small>
-            <small>Due: ${departure}</small>
-            <small>Due: ${returnDate}</small>
-        </div>
-        <p>${attractions}</p>
-    </li>
+      </div>
+    </div>
 `;
 return html;
 }
