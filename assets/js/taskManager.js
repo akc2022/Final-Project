@@ -8,9 +8,9 @@ function createTaskHtml(location, traveler, departure, returnDate, attractions, 
           <p>Departure Date: ${departure}</p>
           <p>Return Date:  ${returnDate}</p>
           <p class="card-text">Attractions: ${attractions}</p>
-          <span>Status: </span><span class="text-success">${status}</span>
+          <span>Status: </span><span class="text-warning">${status}</span>
         </br>
-          <a href="#" class="btn btn-primary mt-3">Delete</a>
+          <a href="#" class="btn btn-primary mt-3 done-button">Mark as Booked</a>
         </div>
       </div>
     </div>
