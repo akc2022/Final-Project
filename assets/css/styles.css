@@ -1,7 +1,9 @@
+
 section {
-    height: 500px;
+    height: 100vh;
     background-color: lightgrey;
     border: solid black 1px;
+    
 }
 
 .landing-page {
@@ -10,8 +12,17 @@ section {
 
 nav {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    border: 2px solid black; 
+    border-radius: 5px; 
+    z-index: 1;
+    
 }
 
 .logo {
@@ -29,26 +40,44 @@ ul {
 }
 
 li {
-    font-size: 36px;
+    font-size: clamp(20px, 3vw, 36px);
     text-decoration: wavy;
+    
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+.link:hover {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.active {
+    color: red;
+    border-bottom: 3px solid red;
 }
 
 #banner {
     background-image: url(https://images.pexels.com/photos/1098515/pexels-photo-1098515.jpeg);
     width: 100%;
-    height: 50%;
+    height: 30%;
     background-position: center;
+    margin-top: 100px;
 }
 
 .company-text h1 {
-    font-size: 85px;
+    font-size: clamp(20px, 8vw, 75px);
     margin: 0px auto;
     font-family: 'Montserrat', sans-serif;
 
 }
 
 .company-text h2 {
-    font-size: 36px;
+    font-size: clamp(20px, 5vw, 36px);
     font-family: 'Source Serif Pro', serif;
     font-weight: 500;
     margin: 0px auto auto 50px;
@@ -82,6 +111,8 @@ li {
 #section3 {
   height: 100vh;
 }
+
+
 
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Source Serif Pro', serif; */
