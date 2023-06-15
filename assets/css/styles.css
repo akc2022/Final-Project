@@ -67,13 +67,17 @@ li {
     height: 30%;
     background-position: center;
     margin-top: 100px;
+    flex-shrink: 2;
 }
 
 .company-text h1 {
     font-size: clamp(20px, 8vw, 75px);
     margin: 0px auto;
     font-family: 'Montserrat', sans-serif;
-
+    flex-shrink: 1;
+    background-color: lightgrey;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .company-text h2 {
@@ -81,6 +85,7 @@ li {
     font-family: 'Source Serif Pro', serif;
     font-weight: 500;
     margin: 0px auto auto 50px;
+    flex-shrink: 1;
 }
 
 .company {
