@@ -10,7 +10,7 @@ function createTaskHtml(id, location, traveler, departure, returnDate, attractio
           <p class="card-text">Attractions: ${attractions}</p>
           <span>Status: </span><span class="text-warning">${status}</span>
         </br>
-          <a href="#" class="btn btn-primary mt-3 done-button">Mark as Booked</a>
+          <button class="btn btn-primary mt-3 done-button">Mark as Booked</button>
         </div>
       </div>
     </div>
@@ -20,7 +20,9 @@ return html;
 
 function formatDate(dateInput) {
   let date = new Date(dateInput);
+  console.log(date);
   let formattedDate = date.toDateString();
+  console.log(formattedDate);
   formattedDate = formattedDate.substr(formattedDate.indexOf(' ') + 1);
   return formattedDate;
 }
