@@ -1,7 +1,4 @@
-//  VALIDATION STILL NEEDS TO BE COMPLETED AND ERROR MESSAGES NEED TO BE DISPLAYED
-//to validate travelers, travelers needs to be names not number
-//to validate location, location needs to be string
-//to validate dates, dates need to be number, returning needs to be later than departure
+// VALIDATION STILL NEEDS TO BE COMPLETED
 
 function validateFormFieldInput(data) {
   const addButton = document.getElementById('add');
@@ -15,13 +12,30 @@ function validateFormFieldInput(data) {
   const departure = departureDateInput.value;
   const returnDate = returnDateInput.value;
   const attractions = attractionInput.value;
+
   if (location === '') {
-    alert('Please enter a location');
+    alert('Please enter a location.');
     return;
   }
   else if (traveler === '') {
-    
+    alert('Please add at least one traveler.');
+    return;
   }
+  else if (departure === '') {
+    alert('Please select a departure date.');
+    return;
+  }
+  else if (returnDate === '') {
+    alert('Please select a return date.');
+    return;
+  }
+  else if (returnDate < departure) {
+    alert('Please select a return date that occurs after your departure date.');
+    return;
+  }
+  else if (attractions === ''){
+    alert('Please add at least one attraction.');
+    return;
   }
 //add to tasklist
 taskList.addTask(location, traveler, departure, returnDate, attractions);
