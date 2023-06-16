@@ -4,7 +4,7 @@
 //to validate dates, dates need to be number, returning needs to be later than departure
 
 //need to correct card formatting in render function
-//need to correct returndate formatting in render function
+//may need to edit html card container
 function validateFormFieldInput(data) {
   const addButton = document.getElementById('add');
   const locationInput = document.getElementById('location');
@@ -37,5 +37,13 @@ attractionInput.value = '';
 
 const taskList = new TaskManager;
 add.addEventListener('click', validateFormFieldInput);
-const taskHTML = createTaskHtml('Hawaii', 'Allison', '3/3/23', '3/6/23', 'attractions are cool' , 'TODO');
-console.log(taskHTML);
+cardContainer.addEventListener('click', (event) => {
+  if (event.target.classList.contains('done-button')) {
+    let parentTask = event.target.parentElement.parentElement.parentElement;
+    let taskId = Number(parentTask.id)
+    let task = taskList.getTaskById(taskId);
+    task.status = 'Booked'
+    taskList.render();
+  }
+
+})
