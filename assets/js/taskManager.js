@@ -1,6 +1,6 @@
-function createTaskHtml(location, traveler, departure, returnDate, attractions, status) {
+function createTaskHtml(id, location, traveler, departure, returnDate, attractions, status) {
    const html = `
-    <div class="col mb-4">
+    <div class="col mb-4" id=${id}>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">${location}</h5>
@@ -40,12 +40,21 @@ class TaskManager {
       const tasksHtmlList = [];
         for (var i = 0; i < this.tasks.length; i++) {
           let currentTask = this.tasks[i];
-          console.log(currentTask);
-          let taskHtml = createTaskHtml(currentTask['location'], currentTask['traveler'], formatDate(currentTask['departure']), formatDate(currentTask['returnDate']), currentTask['attractions'], currentTask['status'] );
+          let taskHtml = createTaskHtml(currentTask.id, currentTask['location'], currentTask['traveler'], formatDate(currentTask['departure']), formatDate(currentTask['returnDate']), currentTask['attractions'], currentTask['status'] );
           tasksHtmlList.push(taskHtml);
         }
          const tasksHtml = tasksHtmlList.join('\n');
          let cardContainer = document.getElementById('cardContainer');
          cardContainer.innerHTML = tasksHtml;
       }
+    getTaskById(taskId) {
+      let foundTask;
+      for (let i=0; i<this.tasks.length; i++) {
+        let currentTask = this.tasks[i]
+        if (taskId === currentTask.id) {
+          let foundTask = currentTask;
+          return foundTask;
+        }
+      }
+    }
 }
