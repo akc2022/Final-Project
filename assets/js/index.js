@@ -10,6 +10,7 @@ function validateFormFieldInput(data) {
   const location = locationInput.value;
   const traveler = travelerInput.value;
   const departure = departureDateInput.value;
+  console.log(departure);
   const returnDate = returnDateInput.value;
   const attractions = attractionInput.value;
 
