@@ -3,8 +3,6 @@
 //to validate location, location needs to be string
 //to validate dates, dates need to be number, returning needs to be later than departure
 
-//need to correct card formatting in render function
-//may need to edit html card container
 function validateFormFieldInput(data) {
   const addButton = document.getElementById('add');
   const locationInput = document.getElementById('location');
@@ -18,7 +16,12 @@ function validateFormFieldInput(data) {
   const returnDate = returnDateInput.value;
   const attractions = attractionInput.value;
   if (location === '') {
-    console.log('beep beep');
+    alert('Please enter a location');
+    return;
+  }
+  else if (traveler === '') {
+    
+  }
   }
 //add to tasklist
 taskList.addTask(location, traveler, departure, returnDate, attractions);
