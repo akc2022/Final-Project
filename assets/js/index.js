@@ -66,5 +66,12 @@ cardContainer.addEventListener('click', (event) => {
     taskList.render();
     taskList.save();
   }
+  if (event.target.classList.contains('delete-button')) {
+    let parentTask = event.target.parentElement.parentElement.parentElement;
+    let taskId = Number(parentTask.id);
+    taskList.deleteTask(taskId);
+    taskList.save();
+    taskList.render();
+  }
 
 })
