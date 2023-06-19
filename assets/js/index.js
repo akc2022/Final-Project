@@ -10,7 +10,6 @@ function validateFormFieldInput(data) {
   const location = locationInput.value;
   const traveler = travelerInput.value;
   const departure = departureDateInput.value;
-  console.log(departure);
   const returnDate = returnDateInput.value;
   const attractions = attractionInput.value;
 
@@ -40,6 +39,7 @@ function validateFormFieldInput(data) {
   }
 //add to tasklist
 taskList.addTask(location, traveler, departure, returnDate, attractions);
+taskList.save();
 //render tasks
 taskList.render();
 //clear form
@@ -54,6 +54,8 @@ attractionInput.value = '';
 
 
 const taskList = new TaskManager;
+taskList.load();
+taskList.render();
 add.addEventListener('click', validateFormFieldInput);
 cardContainer.addEventListener('click', (event) => {
   if (event.target.classList.contains('done-button')) {
@@ -62,6 +64,7 @@ cardContainer.addEventListener('click', (event) => {
     let task = taskList.getTaskById(taskId);
     task.status = 'Booked'
     taskList.render();
+    taskList.save();
   }
 
 })

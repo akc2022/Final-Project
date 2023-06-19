@@ -19,10 +19,10 @@ return html;
 }
 
 function formatDate(dateInput) {
+  console.log("This is the dateInput: " + dateInput);
   let date = new Date(dateInput);
-  console.log(date);
+  console.log("This is the date: " + date);
   let formattedDate = date.toDateString();
-  console.log(formattedDate);
   formattedDate = formattedDate.substr(formattedDate.indexOf(' ') + 1);
   return formattedDate;
 }
@@ -57,6 +57,22 @@ class TaskManager {
           let foundTask = currentTask;
           return foundTask;
         }
+      }
+    }
+    save() {
+      let tasksJson = JSON.stringify(this.tasks);
+      localStorage.setItem("tasks", tasksJson);
+      let currentId = String(this.currentId);
+      localStorage.setItem("currentId", currentId)
+    }
+    load() {
+      if(localStorage.getItem("tasks")) {
+        let tasksJson = localStorage.getItem("tasks");
+        this.tasks  = JSON.parse(tasksJson);
+      }
+      if(localStorage.getItem("currentId")) {
+        let currentId = localStorage.getItem("currentId");
+        this.currentId = parseInt(currentId, 10);
       }
     }
 }
