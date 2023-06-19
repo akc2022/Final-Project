@@ -2,13 +2,14 @@ function createTaskHtml(id, location, traveler, departure, returnDate, attractio
    const html = `
     <div class="col mb-4" id=${id}>
       <div class="card">
+      <div class="container-flex d-flex justify-content-end"><button class="delete-button m-3">x</button></div>
         <div class="card-body">
           <h5 class="card-title">${location}</h5>
           <p>Traveler(s): ${traveler}</p>
           <p>Departure Date: ${departure}</p>
           <p>Return Date:  ${returnDate}</p>
           <p class="card-text">Attractions: ${attractions}</p>
-          <span>Status: </span><span class="text-warning">${status}</span>
+          <span>Status: </span><span>${status}</span>
         </br>
           <button class="btn btn-primary mt-3 done-button">Mark as Booked</button>
         </div>
@@ -74,5 +75,15 @@ class TaskManager {
         let currentId = localStorage.getItem("currentId");
         this.currentId = parseInt(currentId, 10);
       }
+    }
+    deleteTask(taskId) {
+      let newTasks = [];
+      for (let i=0; i<this.tasks.length; i++) {
+        let task = this.tasks[i];
+        if (task.id !== taskId) {
+          newTasks.push(task);
+        }
+      }
+      this.tasks = newTasks; 
     }
 }
