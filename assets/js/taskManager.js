@@ -20,9 +20,7 @@ return html;
 }
 
 function formatDate(dateInput) {
-  console.log("This is the dateInput: " + dateInput);
-  let date = new Date(dateInput);
-  console.log("This is the date: " + date);
+  let date = new Date(dateInput.replace(/-/g, '\/').replace(/T.+/, ''));
   let formattedDate = date.toDateString();
   formattedDate = formattedDate.substr(formattedDate.indexOf(' ') + 1);
   return formattedDate;
@@ -84,6 +82,6 @@ class TaskManager {
           newTasks.push(task);
         }
       }
-      this.tasks = newTasks; 
+      this.tasks = newTasks;
     }
 }
